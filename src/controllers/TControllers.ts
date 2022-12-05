@@ -7,7 +7,12 @@ const TController = {
         
         var tarefas = await Tarefas.find()
         return res.json(tarefas)
-    }
+    },
+    async findById(req: Request, res: Response): Promise<Response>{
+const {_id} = req.params
+        var tarefa = await Tarefas.findById(_id)
+        return res.json(tarefa)
+    },
 
 }
 
