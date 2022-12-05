@@ -10,7 +10,7 @@ router.get("/tarefas/:id", TController.findById);
 //criar tarefa
 router.post("/tarefas", TController.create);
 //atualizar uma tarefa
-router.put("/tarefas/:id", TController.update)
+router.put("/tarefas/:id", TController.update);
 //deletar uma tarefa
-router.delete("/tarefas/:id", TController.delete)
+router.delete("/tarefas/:id", TController.delete);
 export default router;
