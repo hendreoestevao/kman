@@ -1,12 +1,14 @@
-import { Schema } from 'mongoose'
-import mongoose  from 'mongoose'
+import { Schema } from "mongoose";
+import mongoose from "mongoose";
 
-const Tarefas = new  Schema ({
+//tabelas do banco de dados
+const Tarefas = new Schema(
+  {
     nome: String,
     descricao: String,
-    finalizado: Boolean
+    finalizado: Boolean,
+  },
+  { timestamps: true }
+);
 
-},
-{timestamps: true})
-
-export default mongoose.model('Tarefas', Tarefas)
+export default mongoose.model("Tarefas", Tarefas);
