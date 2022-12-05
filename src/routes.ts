@@ -8,5 +8,7 @@ const router = Router()
 router.get('/tarefas',TController.index)
 //buscar tarefas pelo id
 router.get('/tarefas/:id',TController.findById)
+//criar tarefas
+router.post('/tarefas', TController.create)
 
 export default router;
