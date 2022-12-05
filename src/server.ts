@@ -10,9 +10,6 @@ mongoose.connect('mongodb+srv://hendreo:hendreo@cluster0.gbqwmue.mongodb.net/kma
 ))
 .catch(err => (console.log(err)))
 
-app.get('/',(req: Request,res: Response) => {
-    return res.send('hellou word')
-})
 
 app.listen(3333)
 
