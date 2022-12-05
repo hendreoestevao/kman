@@ -25,6 +25,12 @@ const TController = {
     var tarefa = await Tarefas.findByIdAndUpdate(id, req.body);
     return res.json(tarefa);
   },
+  //deletar uma tarefa
+  async delete(req: Request, res: Response): Promise<Response> {
+    const { id } = req.params;
+    var tarefa = await Tarefas.findByIdAndDelete(id, req.body);
+    return res.json(tarefa);
+  },
 };
 
 export default TController;
