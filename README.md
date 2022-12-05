@@ -3,7 +3,7 @@
 
 
 
-Atributos das taregas são: • nome • Model • Versão • Ano • Quilometragem • Tipo de Câmbio • Preço de venda
+Atributos das taregas são: • nome • descricao • finalizado 
 
 🛠 Tecnologias
 Este projeto foi desenvolvido com as seguintes tecnologias
